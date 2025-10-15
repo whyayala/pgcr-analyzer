@@ -1,0 +1,26 @@
+# Clippy configuration for the Bungie PGCR Analyzer
+# Enables additional lints for better code quality
+
+# Documentation lints
+doc-valid-idents = ["API", "JSON", "HTTP", "URL", "ID", "UUID", "PGCR", "K/D", "PvP", "PvE"]
+
+# Performance lints
+avoid-breaking-exported-api = false
+
+# Style lints
+cognitive-complexity-threshold = 30
+too-many-arguments-threshold = 7
+too-many-lines-threshold = 200
+type-complexity-threshold = 300
+
+# Correctness lints
+allow-expect-in-tests = true
+allow-unwrap-in-tests = true
+disallowed-macros = ["print", "println", "eprint", "eprintln"]
+disallowed-names = ["foo", "bar", "baz", "qux", "quux", "corge", "grault", "garply", "waldo", "fred", "plugh", "xyzzy", "thud"]
+
+# Pedantic lints (can be very strict, enable selectively)
+# pedantic = true
+
+# Nursery lints (experimental, enable with caution)
+# nursery = true

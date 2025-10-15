@@ -1,0 +1,13 @@
+/Users/jacob/bungie-pgcr-analyzer/target/debug/deps/net2-5e4572ae262e7e13.d: /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/lib.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/tcp.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/udp.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/socket.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/ext.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/utils.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/mod.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/impls.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/unix.rs
+
+/Users/jacob/bungie-pgcr-analyzer/target/debug/deps/libnet2-5e4572ae262e7e13.rmeta: /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/lib.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/tcp.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/udp.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/socket.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/ext.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/utils.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/mod.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/impls.rs /Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/unix.rs
+
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/lib.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/tcp.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/udp.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/socket.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/ext.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/utils.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/mod.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/sys/unix/impls.rs:
+/Users/jacob/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/net2-0.2.39/src/unix.rs:
