@@ -31,8 +31,8 @@ pub enum Commands {
         /// The Bungie membership ID of the user to analyze
         #[arg(short, long)]
         user_id: String,
-        /// The membership type (1=Xbox, 2=PlayStation, 4=Steam, 10=Battlenet, 254=Bungie)
-        #[arg(short, long, default_value = "4")]
+        /// The membership type (1=Xbox, 2=PlayStation, 3=Steam, 5=Stadia, 10=Battle.net, 254=Bungie)
+        #[arg(short, long, default_value = "3")]
         membership_type: i32,
         /// Activity type to filter by (story, strike, crucible, gambit, raid, dungeon, other)
         #[arg(short, long)]

@@ -50,7 +50,8 @@ bungie-analyzer search --name "PlayerDisplayName"
 #### Analyze Recent Activities
 ```bash
 # Analyze recent Crucible matches for a Steam user
-bungie-analyzer analyze --user-id "123456789" --membership-type 4 --activity-type crucible --count 10
+# Note: Steam is membership type 3
+bungie-analyzer analyze --user-id "123456789" --membership-type 3 --activity-type crucible --count 10
 
 # Analyze recent Raids with table output
 bungie-analyzer analyze --user-id "123456789" --membership-type 4 --activity-type raid --count 5 --format table
@@ -65,7 +66,8 @@ bungie-analyzer activity --activity-id "1234567890" --user-id "123456789" --form
 
 - `1` - Xbox
 - `2` - PlayStation
-- `4` - Steam
+- `3` - Steam
+- `5` - Stadia
 - `10` - Battle.net
 - `254` - Bungie
 
@@ -77,6 +79,7 @@ bungie-analyzer activity --activity-id "1234567890" --user-id "123456789" --form
 - `gambit` - Gambit matches
 - `raid` - Raid encounters
 - `dungeon` - Dungeon encounters
+- `public_event` - Public events
 - `other` - All other activity types
 
 ### Output Formats
@@ -158,10 +161,17 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Search for a user
     let search_results = client.search_users("PlayerName").await?;
     
+    // Choose a membership and resolve a character ID
+    let membership_type = 3; // Steam
+    let membership_id = &search_results.search_results[0].membership_id;
+    let character_ids = client.get_characters(membership_type, membership_id).await?;
+    let character_id = &character_ids[0];
+
     // Get their recent activities
     let reports = client.get_post_game_carnage_reports(
-        4, // Steam membership type
-        &search_results.search_results[0].membership_id,
+        membership_type,
+        membership_id,
+        character_id,
         Some(ActivityType::Crucible),
         Some(10)
     ).await?;
@@ -169,7 +179,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Analyze the reports
     let mut analyzer = CarnageReportAnalyzer::new();
     for report in reports {
-        let analysis = analyzer.analyze_report(&report, &user_id).await?;
+        let analysis = analyzer.analyze_report(&report, membership_id).await?;
         println!("Analysis: {:?}", analysis);
     }
     
