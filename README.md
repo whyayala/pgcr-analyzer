@@ -18,6 +18,35 @@ A comprehensive Rust application for analyzing Destiny 2 post-game carnage repor
 - Rust 1.70+ (2021 edition)
 - A Bungie API key (free from [Bungie Developer Portal](https://www.bungie.net/en/Application))
 
+### Rust toolchain setup (rustup)
+
+This repo includes a `.rust-version` file; `rustup` will automatically use the pinned toolchain.
+
+macOS install:
+
+```bash
+# Install rustup
+brew install rustup-init
+rustup-init -y
+
+# Activate environment for current shell session
+source "$HOME/.cargo/env"
+
+# Verify
+rustc --version
+cargo --version
+
+# Ensure common components are installed
+rustup component add clippy rustfmt
+```
+
+If you need the exact toolchain in `.rust-version` and it's not installed automatically:
+
+```bash
+rustup toolchain install $(cat .rust-version)
+rustup default $(cat .rust-version)
+```
+
 ## Installation
 
 1. Clone the repository:
